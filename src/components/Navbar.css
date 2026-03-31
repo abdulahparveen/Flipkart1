@@ -1,0 +1,42 @@
+/* Default (desktop) */
+.category-row {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap; /* allow wrapping if needed */
+}
+
+.category-row .text-center {
+  flex: 1;
+  min-width: 80px;
+  text-align: center;
+}
+
+.category-row i {
+  font-size: 24px;
+  color: #2874f0;
+  margin-bottom: 5px;
+}
+
+/* Mobile: 2 icons per row */
+@media (max-width: 768px) {
+  .category-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 15px;
+    justify-items: center; /* center horizontally */
+  }
+
+  .category-row .text-center {
+    flex-direction: row;   /* icon + text side by side */
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .category-row i {
+    margin-bottom: 0;
+  }
+}

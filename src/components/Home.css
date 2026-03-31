@@ -1,0 +1,31 @@
+.home {
+  padding: 20px;
+}
+
+.banner {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ads {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ad-card {
+  flex: 1;
+  min-width: 200px;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.product-card img {
+  width: 100%;        /* fills the card width */
+  height: 200px;      /* fixed height for uniformity */
+  object-fit: cover;  /* keeps aspect ratio, crops if needed */
+  border-radius: 6px; /* optional rounded corners */
+}

@@ -1,0 +1,6 @@
+.product-card img {
+  width: 100%;
+  height: 200px;       /* uniform height */
+  object-fit: cover;   /* keeps aspect ratio, crops if needed */
+  border-radius: 6px;
+}
